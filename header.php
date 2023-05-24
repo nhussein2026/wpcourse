@@ -22,21 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- FontAwesome Icons core CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-
-    <!-- Responsive styles for this template -->
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- Colors for this template -->
-    <link href="assets/css/colors.css" rel="stylesheet">
-
+   <?php wp_head(); ?>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
