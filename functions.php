@@ -18,20 +18,7 @@ function wpc_load_assets()
 
 }
 add_action('wp_enqueue_scripts', 'wpc_load_assets');
-} else {
-    //notify the admin
-}
-
-// method to update library like jquery
-
-// if (!function_exists('wpc_redefine_assets')){
-//     function wpc_redefine_assets()
-//     {
-//         wp_deregister_script('jquery');
-//         wp_register_script('jquery', 'https://code.jquery.com/jquery-3.7.0.min.js');
-//     }
-// add_action('wp_enqueue_scripts', 'wp_redefine_assets');
-// }
+} 
 if (!function_exists('wpc_setup')) {
     function wpc_setup()
     {
@@ -39,3 +26,9 @@ if (!function_exists('wpc_setup')) {
     }
     add_action('after_setup_theme', 'wpc_setup');
 }
+
+function wpc_edit_content($content)
+{
+    return $content . '<p>Edited</p>';
+}
+add_filter('the_content', 'wpc_edit_content');
